@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 350px;
+    margin-left: 10px;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+.row{
+    display: inline-flex;
+}

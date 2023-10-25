@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Anytime Buy</span>
+
+    <mat-form-field class="example-full-width" *ngIf="menuType==='default'">
+        <mat-label>Search Product</mat-label>
+        <input matInput #search (keyup)="serchProduct($event)" (blur)="hideproduct()" placeholder="" value="">
+    </mat-form-field>
+    <div class="example-button-row">
+        <button mat-button (click)="searchInput(search.value)">Search</button>
+    </div>
+    <ul class="suggested-search" *ngIf="searchProduct">
+        <li *ngFor="let x of searchProduct">
+            <a href="">{{x.name}}</a>
+        </li>
+    </ul>
+
+    <span class="example-spacer"></span>
+
+    <ul class="list">
+        <li> <a routerLink="/">Home</a></li>
+        <!-- <li ><a routerLink="seller-login">Seller</a></li>
+        <li><a  routerLink="seller-auth">Login</a></li> -->
+        <div class="dropdown-menu">
+            <li>Signup/Login</li>
+            <div class="menu-content">
+                <a class="links-hidden" routerLink="seller-auth">Admin</a>
+                <a class="links-hidden" routerLink="user-auth">User</a>
+            </div>
+        </div>
+        <li><a (click)="logout()">Logout</a></li>
+        <li> <a href="">{{sellerName | titlecase}}</a></li>
+        <li><a routerLink="/cart-page">Cart ({{cartItems}})</a></li>
+    </ul>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>

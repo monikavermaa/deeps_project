@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+mat-card{
+    text-align: center;
+    margin: 60px 30px;
+   
+}
+.mat-mdc-form-field{
+    width: 50%;
+}
+button{
+    width: 50%;
+    font-size: 20px;
+}
+.message{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}

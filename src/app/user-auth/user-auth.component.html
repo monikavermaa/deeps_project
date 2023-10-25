@@ -1,0 +1,52 @@
+<form #userSignup="ngForm" (ngSubmit)="signUp(userSignup.value)">
+    <h1>Registration</h1>
+    <h3>{{signupMessage}}</h3>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label>Enter Your Name</mat-label>
+                <input matInput name="name"  pattern="[a-zA-Z]+$"  #name="ngModel" ngModel required>
+            </mat-form-field> <br>          
+            <p><span *ngIf="name.invalid && (name.touched || userSignup.submitted)">* Please Enter Valid Username</span></p>
+
+            <mat-form-field>
+                <mat-label>Enter Your Email</mat-label>
+                <input matInput name="email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ngModel required>
+            </mat-form-field> <br>
+            <p><span *ngIf="email.invalid && (email.touched || userSignup.submitted)">* Please Enter Valid Email</span></p>
+            <p><span *ngIf="(email.touched || userSignup.submitted) && email.errors">*Email is required </span></p>
+
+            <mat-form-field>
+                <mat-label>Enter Your Contact Number</mat-label>
+                <input matInput type="number" #number="ngModel" name="number" ngModel required>
+                <mat-icon matSuffix>phone</mat-icon>
+            </mat-form-field> <br>
+            <p><span *ngIf="number.invalid &&( number.touched || userSignup.submitted)">*Value must be a number</span></p>
+
+
+            <mat-form-field>
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" required minlength="5" #paswrd="ngModel"  name="passowrd" ngModel required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" >
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field> <br>
+            <p><span *ngIf="paswrd.invalid && (paswrd.touched || userSignup.submitted)">*Password length must be more than 5</span></p>
+             
+
+            <mat-form-field>
+                <mat-label>Enter Your Address</mat-label>
+                <textarea matInput name="description" name="address" ngModel required></textarea>
+            </mat-form-field> <br>
+
+            <button mat-flat-button color="primary">Create Your Account</button><br>
+            <a (click)="goToPage('user-login')">Already you have account? Click to login</a>
+
+        </mat-card-content>
+
+        <mat-card-footer>
+
+        </mat-card-footer>
+
+    </mat-card>
+</form>

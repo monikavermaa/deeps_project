@@ -1,0 +1,328 @@
+{
+  "user": [
+    {
+      "id": "2345",
+      "name": "deepika",
+      "email": "deep@gmail.com",
+      "password": "deep@gmailcom"
+    },
+    {
+      "username": "deepika",
+      "email": "deeepika1@gmail.com",
+      "password": "deep2112345",
+      "id": "GqFuWCG"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "12345",
+      "id": "BaO4xyw"
+    },
+    {
+      "id": "245",
+      "name": "deepika",
+      "email": "deep@gmail.com",
+      "password": "deep@gmailcom"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "deep90",
+      "id": "y9miWD4"
+    },
+    {
+      "username": "rajabaja",
+      "email": "Raja@gmail.com",
+      "password": "1234",
+      "id": "Sx4W66p"
+    },
+    {
+      "username": "varsha",
+      "email": "varsha@gmail.com",
+      "password": "varsha123",
+      "id": "6BOR0mR"
+    },
+    {
+      "username": "Raju",
+      "email": "Raju@gmail.com",
+      "password": "Raju1234",
+      "id": "BSLP0YN"
+    },
+    {
+      "username": "amit",
+      "email": "amit@ghmail.com",
+      "password": "amit12345",
+      "id": "kR8WlLy"
+    },
+    {
+      "username": "Amit",
+      "email": "Actoramit2003@gmail.com",
+      "password": "Amit@123",
+      "id": "1Ug2fZB"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": "UcMDVM3"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": "uDpOypK"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "1234",
+      "id": "Bv1wymg"
+    },
+    {
+      "username": "deepika",
+      "email": "deepikadubey01052000@gmail.com",
+      "password": "amit12345",
+      "id": "mYPuZYP"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "1234",
+      "id": "KDMJqg_"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "12345",
+      "id": "tCCZH7U"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "ertyuio",
+      "id": "2aO-vq1"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": "lSYWa2U"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "deepika12345",
+      "id": "HHvu_R2"
+    },
+    {
+      "username": "deepika",
+      "email": "deepika@gmail.com",
+      "password": "1234566",
+      "id": "q3se5HV"
+    }
+  ],
+  "products": [
+    {
+      "name": "White  Shoes",
+      "price": "7800",
+      "category": "Womens Shoes",
+      "description": "Leather shoes on white background",
+      "image": "https://media.istockphoto.com/id/464269685/photo/blue-shoes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZRu1wWxj0HSbNQWFHHos8Ki_hkysKJLmQXXx-sHUOmM=",
+      "id": "Sz99h09"
+    },
+    {
+      "name": "Shoes",
+      "price": "10000",
+      "category": "Mens Shoes",
+      "description": "Overhead Shot Of blue Sports On yellow Background\n",
+      "image": "https://media.istockphoto.com/id/1308274455/photo/blue-sneakers-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=BAAB67D78Mx7GgyUPnTVA01z2xrY6Hj0rJ_O6swbNvY=",
+      "id": "G1Q9e1e"
+    },
+    {
+      "name": "Mens Black shoes",
+      "price": "3000",
+      "category": "Mens Shoes",
+      "description": "new winter  on a white background",
+      "image": "https://media.istockphoto.com/id/1254397296/photo/pair-of-white-male-sneakers-on-white-background-isolated-fashion-stylish-sport-shoes-close-up.jpg?s=612x612&w=0&k=20&c=tw662J4iGGyIHpV_pcMJGcM_EE3QJDWt26H9Sp5jTRs=",
+      "id": "mCeSFTE"
+    },
+    {
+      "name": "Ladies Heels Belly",
+      "price": "4000",
+      "category": "Womens Heels",
+      "description": "High Heel Shoes Covered With Shiny Gems On A White Background.",
+      "image": "https://media.istockphoto.com/id/613316312/photo/high-heel-shoes-covered-with-shiny-gems.webp?s=170667a&w=0&k=20&c=3x-SGYLxJscPuB8XdPVtjLVGiyvTUqQYK8p15m7E7E0=",
+      "id": "Dfk0nZR"
+    },
+    {
+      "name": "Ladies Heels",
+      "price": "6500",
+      "category": "Womens Heels",
+      "description": "Very high heeled red shoes",
+      "image": "https://media.istockphoto.com/id/927913052/photo/female-shoes-on-a-white-background-with-a-shadow-on-a-glossy-surface-front-view.jpg?s=612x612&w=0&k=20&c=pWoYqSUjUQUWPTEqDRwivg39xGIEDm2c3TxllfSB0SI=",
+      "id": "WJQ02-o"
+    },
+    {
+      "name": "Shoes",
+      "price": "3500",
+      "category": "Boys Shoes",
+      "description": "Lifestyle product photo, levitation and urban style concept.",
+      "image": "https://media.istockphoto.com/id/938896378/photo/white-sport-shoes-on-isolated-white-background-with-copy-text-space.jpg?s=612x612&w=0&k=20&c=L940gx-fkcly2_pyJ5XGc-T75Z_rOGqZqPjezP3_uqg=",
+      "id": "YeE-aL-"
+    },
+    {
+      "name": "Mens  boots",
+      "price": "7300",
+      "category": "Mens Shoes",
+      "description": "\nHiking boots. Isolated on white background",
+      "image": "https://media.istockphoto.com/id/471111847/photo/hiking-boots.jpg?s=612x612&w=0&k=20&c=C5RK1PQ8tywFeLrvJoQWocfP2DgVr5TDAFrhoRf7QoQ=",
+      "id": "musvgp2"
+    },
+    {
+      "name": "Mens Brown shoes",
+      "price": "5000",
+      "category": "Mens Boots",
+      "description": "Military boots beige suede with bootlace. ",
+      "image": "https://media.istockphoto.com/id/578271442/photo/military-boots-with-shoelace-beige.jpg?s=612x612&w=0&k=20&c=9lO29wmAvScxr8Jk5oCe8GRsCV-lepRc28cRWpweVgI=",
+      "id": "FcyyE-p"
+    }
+  ],
+  "customer": [
+    {
+      "name": "deepika",
+      "email": "deepikadubey01052000@gmailcom",
+      "number": 9109001609,
+      "passowrd": "deepika@123",
+      "address": "Suadama Nagar",
+      "id": 1
+    },
+    {
+      "name": "Amit",
+      "email": "Actoramit2003@gmail.com",
+      "number": 882342897,
+      "passowrd": "Amit123",
+      "address": "",
+      "id": 2
+    },
+    {
+      "name": "deepika",
+      "email": "deepika@gmail.com",
+      "number": 2345678,
+      "passowrd": "4567890",
+      "address": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 5
+    },
+    {
+      "name": "Varsha",
+      "email": "varsha@gmail.com",
+      "number": 1234567890,
+      "passowrd": "varsha@123",
+      "address": "SAGAR[M.P]",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 11
+    },
+    {
+      "name": "Titiksha",
+      "email": "titikshaverma1611@gmail.com",
+      "number": 6261015293,
+      "passowrd": "chaypilo",
+      "address": "sudama nagar",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": "",
+      "passowrd": "",
+      "address": "",
+      "id": 13
+    },
+    {
+      "name": "deepika",
+      "email": "deepikadubey01052000@gmail.com",
+      "number": 234567898345678,
+      "passowrd": "12365",
+      "address": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": 34567890,
+      "passowrd": "23456789",
+      "address": "sudama nagar",
+      "id": 15
+    },
+    {
+      "name": "deepika",
+      "email": "",
+      "number": 34567890,
+      "passowrd": "3456789",
+      "address": "sdfghjkl",
+      "id": 16
+    },
+    {
+      "name": "deepika",
+      "email": "",
+      "number": 34567890,
+      "passowrd": "3456789",
+      "address": "sdfghjkl",
+      "id": 17
+    }
+  ]
+}

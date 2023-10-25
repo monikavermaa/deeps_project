@@ -1,0 +1,38 @@
+<p>seller-add-product works!</p>
+<form #sellerAddProduct="ngForm" (ngSubmit)="addProduct(sellerAddProduct.value)">
+    <h1>Add New Product</h1>
+    <h2 class="message">{{addProductMessage}}</h2>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label>Enter Product Name</mat-label>
+                <input matInput name="name" ngModel>
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label>Enter Product Price</mat-label>
+                <input matInput name="price" ngModel>
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label>Enter Product Category</mat-label>
+                <input matInput name="category" ngModel>
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label>Enter Product Description</mat-label>
+                <textarea matInput  name="description" ngModel></textarea>
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label>Enter Product Image Url</mat-label>
+                <input matInput name="image" ngModel>
+            </mat-form-field><br>
+            <!-- <span>    
+                <button mat-stroked-button>Import</button>
+            </span> -->
+            <button mat-flat-button color="primary">Add Product</button><br>
+
+        </mat-card-content>
+        <mat-card-footer>
+
+        </mat-card-footer>
+
+    </mat-card>
+</form>

@@ -1,0 +1,35 @@
+<p>seller-login works!</p>
+<form #SellerLogin="ngForm" (ngSubmit)="Login(SellerLogin.value)">
+    <h1>Seller Login</h1>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required name="email" #email="ngModel" ngModel > 
+            </mat-form-field> 
+            <p><span *ngIf="email.invalid && email.touched">Please Enter Valid Email</span></p>
+
+
+
+            <mat-form-field>
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" required minlength="5" #paswrd="ngModel" name="password" ngModel>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <p><span *ngIf=" paswrd.touched && paswrd.invalid ">Please Enter Valid password</span></p>
+
+
+        </mat-card-content>
+        <mat-card-footer>
+         
+                <button class="btn" mat-raised-button color="warn" [disabled]="SellerLogin.invalid">Login</button> <br>
+                <a (click)="goToPage('seller-login')">Don't have account? Click to Sign-Up</a>
+
+           
+        </mat-card-footer>
+
+    </mat-card>

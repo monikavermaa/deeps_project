@@ -1,0 +1,33 @@
+mat-card {
+  text-align: center;
+  margin: 60px 30px;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.mat-mdc-form-field {
+  width: 50%;
+}
+
+a {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+p {
+  color: red;
+  font-weight: bold;
+  margin-left: -33rem;
+
+}
+button:disabled{
+  cursor: not-allowed;
+}
+.btn:disabled{
+  cursor: not-allowed;
+
+}

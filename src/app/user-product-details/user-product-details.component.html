@@ -1,0 +1,32 @@
+<p>user-product-details works!</p>
+
+<div class="row" *ngIf="productData">
+    <div class="col-sm-6">
+    <marquee width="100%" height="100%" direction="down"  behavior="slide">
+        <img class="product-img" src="{{productData.image}}" alt="">
+    </marquee>
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{productData.name}}</h1>
+            <h3>Price : {{productData.price|currency:'INR'}}</h3>
+            <h4>Category : {{productData.category}}</h4>
+            <h5>Description : {{productData.description}}</h5>
+
+            <div class="wrapper">
+              <span class="minus" (click)="handleQuantity('min')">-</span>
+              <span class="num">{{productQuantity}}</span>
+              <span class="plus"(click)="handleQuantity('plus')" >+</span>
+            </div>
+        
+
+            <button mat-stroked-button color="primary">Buy Now</button>
+            <button mat-stroked-button color="accent" *ngIf="!removeCart" (click)="addToCart()">Add to Cart</button>
+            <button mat-stroked-button color="warn" *ngIf="removeCart" (click)="removeToCart(productData.id)">Remove to Cart</button>
+           
+          
+              
+        </div>
+    </div>
+</div>
+

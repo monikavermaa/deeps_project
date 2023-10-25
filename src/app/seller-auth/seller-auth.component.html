@@ -1,0 +1,40 @@
+
+<form class="common-form" #SellerSignUp="ngForm" (ngSubmit)="signUp(SellerSignUp.value)">
+
+    <h1>Seller Sign-Up </h1>
+    <mat-card>
+        <mat-card-content>
+        <mat-form-field>
+            <mat-label>Enter your name</mat-label>
+            <input matInput pattern="[a-zA-Z]+$" #name="ngModel" required name="username" ngModel>
+        </mat-form-field> <br>
+        <p><span *ngIf="name.invalid && name.touched">Please Enter Valid username</span></p>
+
+        <mat-form-field>
+            <mat-label>Enter your email</mat-label>
+            <input matInput pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" #email="ngModel" required placeholder="pat@example.com" name="email" ngModel>
+        </mat-form-field> <br>
+        <p><span *ngIf="email.invalid && email.touched">Please Enter Valid Email Id</span></p>
+
+    
+        <mat-form-field>
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" required minlength="5" #paswrd="ngModel" name="password"  name="password" ngModel>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <p><span *ngIf=" paswrd.touched && paswrd.invalid ">*Password length must be 5 </span></p>
+
+
+    <div class="example-button-row">
+        <button mat-flat-button color="primary">Submit</button><br>
+        <a (click)="goToPage('seller-login')">Already you have account? Click to login</a>
+    </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <!-- <button type="submit" class="btn btn-danger">Submit</button> -->
+</form>

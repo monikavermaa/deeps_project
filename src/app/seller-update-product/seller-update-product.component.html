@@ -1,0 +1,38 @@
+<p>seller-update-product works!</p>
+<form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+    <h1>Update Product</h1>
+    <!-- <h2 class="message">{{addProductMessage}}</h2> -->
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label> Product Name</mat-label>
+                <input matInput name="name" ngModel="{{productData?.name}}">
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label> Product Price</mat-label>
+                <input matInput name="price" ngModel="{{productData?.price}}">
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label> Product Category</mat-label>
+                <input matInput name="category" ngModel="{{productData?.category}}">
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label> Product Description</mat-label>
+                <textarea matInput  name="description" ngModel="{{productData?.description}}"></textarea>
+            </mat-form-field> <br>
+            <mat-form-field>
+                <mat-label> Product Image Url</mat-label>
+                <input matInput name="image" ngModel="{{productData?.image}}">
+            </mat-form-field><br>
+            <!-- <span>    
+                <button mat-stroked-button>Import</button>
+            </span> -->
+            <button mat-flat-button color="primary">Update Product</button><br>
+
+        </mat-card-content>
+        <mat-card-footer>
+
+        </mat-card-footer>
+
+    </mat-card>
+</form>

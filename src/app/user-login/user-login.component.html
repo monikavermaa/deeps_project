@@ -1,0 +1,44 @@
+<p>user-login works!</p>
+
+<form #UserLogin="ngForm" (ngSubmit)="Login(UserLogin.value)">
+    <h1>Sign In </h1>
+    <mat-card>
+        <h4>{{authError}}</h4>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label>Enter Your Name</mat-label>
+                <input matInput name="name" #name="ngModel" pattern="[a-zA-Z]+$" ngModel required>
+            </mat-form-field> <br>
+            <p><span *ngIf="name.invalid && name.touched" [ngStyle]="{'margin-left':'-30rem','color':'red'}">Please Enter Valid username</span></p>
+
+
+            <mat-form-field>
+                <mat-label>Enter Your Email</mat-label>
+                <input matInput placeholder="abc@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required name="email" #email="ngModel" ngModel >
+                <mat-error *ngIf=""></mat-error>
+            </mat-form-field> <br>
+            <p><span  *ngIf="email.invalid && email.touched"[ngStyle]="{'margin-left':'-30rem','color':'red'}">Please Enter Valid Email</span></p>
+
+
+            <mat-form-field>
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" required minlength="5" #paswrd="ngModel" name="password" ngModel required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <p><span *ngIf=" paswrd.touched && paswrd.invalid "  [ngStyle]="{'margin-left':'-30rem','color':'red'}">Please Enter Valid password</span></p>
+
+
+        </mat-card-content>
+        <mat-card-footer>
+            <div>
+                <button mat-raised-button color="warn" [disabled]="UserLogin.invalid">Login</button> <br>
+                <a (click)="goToPage('user-auth')">Don't have account? Click to Sign-Up</a>
+
+            </div>
+        </mat-card-footer>
+
+    </mat-card>

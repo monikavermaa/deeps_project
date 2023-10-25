@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 350px;
+    margin-left: 10px;
+  }
+  .example-header-image {
+    background-size: cover;
+  }
+.row{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
